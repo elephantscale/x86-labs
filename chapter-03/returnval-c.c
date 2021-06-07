@@ -1,1 +1,5 @@
-/* This file should be generated */
+int main(void)
+{
+
+return 42;
+}
