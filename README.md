@@ -4,7 +4,7 @@
 ## Chapter 3: Tools
 
  * [Almost Hello World](./chapter-03/almost-hello-world.md)
- * [Hello World](./chapter-04hello-world.md)
+ * [Hello World](./chapter-03/hello-world.md)
 
 ## Chapter 8
  * [Chapter 8](./chapter-08/README.md)
