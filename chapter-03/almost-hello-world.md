@@ -8,9 +8,7 @@ Open a file named `returnval-almost.s` and enter the following program:
 .globl main
 main:
 
-mov
-eax, 42
-
+mov eax, 42
 ret
 ```
 
