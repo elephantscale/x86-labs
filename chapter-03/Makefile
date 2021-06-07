@@ -4,9 +4,12 @@ ASMFILE = returnval
 
 CC = gcc
 ASFLAGS +=  -m64  -masm=intel 
-CFLAGS +=  -fno-asynchronous-unwind-tables  -std=c11  
+CFLAGS +=  -fno-asynchronous-unwind-tables -g -std=c11  
 DIAGNOSTIC += -Wall -Wextra -Wpedantic -Waggregate-return -Wwrite-strings -Wfloat-equal -Wvla  -g3
 OPTIMIZATION += -O1
+
+%.s: %.c
+	$(CC) $(CPPFLAGS) $(CFLAGS) -S -o $@ $^
 
 $(OUTFILE) : $(TESTCODE).o  $(ASMFILE).o
 	$(CC)  $(ASFLAGS)  $(DIAGNOSTIC) $(OPTIMIZATION)  -o $(OUTFILE)     $(TESTCODE).o  $(ASMFILE).o
