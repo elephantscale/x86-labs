@@ -1,4 +1,4 @@
-# x86-labs-solutions
+# x86-labs
 
 
 ## Chapter 3: Tools
