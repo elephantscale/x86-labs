@@ -10,7 +10,11 @@ extern void product_5(int x, int y, int * res);
 
 int main(void)
 {
-  printf("%d\n", product_2(3,4,5));
+   int arg = 3;
+   add42(&arg);
+   printf("%d\n", arg); 
+
+  /* printf("%d\n", product_2(3,4,5)); */
   /* TODO: Try the other functions */
 }
 
