@@ -10,6 +10,18 @@ out the name of the program as it is invoked on the com-
 mand line (i.e., `argv[0]`). The second argument to a func-
 on is stored in the register rsi.
 
+One potential solution:
+
+```assembly
+.intel_syntax noprefix
+.globl	main
+main:
+	mov rdi, [rsi]
+        call puts@PLT
+        ret
+
+```
+
 3. Write an assembly program whose return code is the
 ASCII value of the first le er of the program’s name.
 
