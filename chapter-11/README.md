@@ -1,4 +1,4 @@
-# Chapter 12 Exercises
+# Chapter 11 Exercises
 
 
 1. Write a function `unsigned int factorial(unsigned int)` that multiplies all numbers from 1 to top and re- turns their product.
