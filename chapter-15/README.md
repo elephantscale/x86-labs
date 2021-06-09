@@ -1,12 +1,8 @@
-# Chapter 15
+# Chapter 10 Exercises
 
 
-
-1. Write `int exists(short needle, short *haystack, int sz)` that will return the first index in array haystack whose value is equal to needle. If the value does not exist in the array, −1 should be returned. Challenge: Use at most 32 bytes.
-2. Implement `strrchr(3)` in assembly.
-3. Implement `strlen(3)` in assembly, in under 32 bytes.  *Challenge:* Use at most 24 bytes.
+1. Write a function `double hypoteneuse(double a, double b)` that calculates and returns the length of a right triangle’s hypoteneuse for sides a and b.
+2. Write a function `int quadratic(double a, double b, double c, double *x, double *y)` that implements the quadra c formula. It should return the number of real roots that it finds, and encode the values into *x and *y.
 
 
-[Chapter 15](./exercise-15.s)
-
-
+[Exercises](./exercise-10.s)
